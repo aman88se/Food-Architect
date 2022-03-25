@@ -11,7 +11,7 @@ import java.lang.Exception
 import java.util.concurrent.Flow
 import javax.inject.Inject
 
-class GetMealSearchList @Inject constructor(private val repository: MealSearchRepository) {
+class GetMealSearchListFeature @Inject constructor(private val repository: MealSearchRepository) {
 
     operator fun invoke(s: String): kotlinx.coroutines.flow.Flow<Resource<List<Meal>>> = flow {
         try{
